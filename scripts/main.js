@@ -7,7 +7,7 @@ document.getElementById('textInputField').focus();
 // If there is any text inside the item field, add that text to the todo list
 document.getElementById('textInputField').addEventListener('keydown', function(event) {
   var value = this.value;
-  if ((event.code === 'Enter' || event.code === 'NumpadEnter' || event.code === 13) && value) {
+  if ((event.code === 'Enter' || event.code === 'NumpadEnter' || event.code === 13 || event.keyCode === 13 || event.code === 10 || event.keyCode === 10) && value) {
     addItem(value);
     document.getElementById('textInputField').value = '';
   }
