@@ -99,7 +99,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
 
-  transition: all 0.5s ease;
+  transition: top 0.5s ease;
 
   -webkit-appearance: none;
   -moz-appearance: none;
