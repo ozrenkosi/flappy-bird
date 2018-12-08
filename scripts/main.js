@@ -38,10 +38,6 @@ function removeItem() {
 
     changeInputPosition()
   }, 450);
-
-  setTimeout(function() {
-    divWrapper.classList.remove('cardDeleteAnimation');
-  }, 500);
 }
 
 function completeItem() {
