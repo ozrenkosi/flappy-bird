@@ -35,9 +35,12 @@ function removeItem() {
 
   setTimeout(function() {
     list.removeChild(listItem);
-    divWrapper.classList.remove('cardDeleteAnimation');
 
     changeInputPosition()
+  }, 450);
+
+  setTimeout(function() {
+    divWrapper.classList.remove('cardDeleteAnimation');
   }, 500);
 }
 
