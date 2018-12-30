@@ -46,6 +46,6 @@ function keyPressed() {
 function gameOver() {
   for (let i = pipes.length-1; i >= 0; i--) {
     pipes[i].speed = 0;
-    gameIsRunning = false;
   }
+  gameIsRunning = false;
 }
