@@ -11,6 +11,7 @@ let pointSound;
 let swooshSound;
 let birdIsAlive = true;
 let waitingForStart = true;
+let gameAreaHeight = 547;
 
 function preload() {
   bgImage = loadImage("assets/bg.jpg");
