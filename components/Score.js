@@ -5,7 +5,7 @@ class Score {
 
   update() {
     for (let i = pipes.length-1; i >= 0; i--) {
-      if (pipes[i].x < bird.x && pipes[i].x > bird.x-5) {
+      if (pipes[i].x < bird.x && pipes[i].x > bird.x-3) {
         this.text = this.text + 1;
       }
     }
