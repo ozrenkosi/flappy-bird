@@ -81,13 +81,13 @@ function gameOver() {
     hitSound.play();
     swooshSound.play();
   }
-  birdIsAlive = false;
-
-  resetButton.show();
 
   for (let i = pipes.length-1; i >= 0; i--) {
     pipes[i].speed = 0;
   }
+  birdIsAlive = false;
+
+  resetButton.show();
 }
 
 function mousePressed() {
