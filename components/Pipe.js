@@ -3,8 +3,8 @@ class Pipe {
     this.x = width;
 
     this.pipeWidth = 80;
-    this.spacingBetween = 200;
-    this.topHeight = floor(map(random(height), 0, height, height/8, height-this.spacingBetween-80));
+    this.spacingBetween = 150;
+    this.topHeight = floor(map(random(gameAreaHeight), 0, gameAreaHeight, gameAreaHeight/8, gameAreaHeight-this.spacingBetween-gameAreaHeight/8));
 
     this.speed = 3;
   }
@@ -39,6 +39,9 @@ class Pipe {
     fill(113, 187, 41);
 
     rect(this.x, 0-2, this.pipeWidth, this.topHeight+2, 0, 0, 5, 5);
-    rect(this.x, this.topHeight+this.spacingBetween, this.pipeWidth, height-this.topHeight-this.spacingBetween+2, 5, 5, 0, 0)
+    rect(this.x, this.topHeight+this.spacingBetween, this.pipeWidth, gameAreaHeight-this.topHeight-this.spacingBetween, 5, 5, 0, 0);
+
+    rect(this.x-5, this.topHeight-40, this.pipeWidth+10, 40, 5, 5, 0, 0);
+    rect(this.x-5, this.topHeight+this.spacingBetween, this.pipeWidth+10, 40, 0, 0, 5, 5);
   }
 }

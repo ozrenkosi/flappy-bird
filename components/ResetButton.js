@@ -1,8 +1,8 @@
 class ResetButton {
   constructor() {
-    this.x = width/6;
-    this.y = height-height/3;
-    this.buttonWidth = width-(width/6)*2;
+    this.x = 50;
+    this.y = 400;
+    this.buttonWidth = 250;
     this.buttonHeight = 80;
   }
 
@@ -16,17 +16,17 @@ class ResetButton {
   }
 
   show() {
-    if (bird.y >= height-bird.birdHeight) {
+    if (bird.y >= gameAreaHeight-bird.birdHeight) {
       fill(236, 251, 222);
       stroke(40, 30, 36);
       rect(this.x, this.y, this.buttonWidth, this.buttonHeight, 16);
 
-      textSize(26);
+      textSize(24);
       fill(40, 160, 40);
       noStroke();
       textStyle(BOLD);
       textAlign(CENTER, CENTER);
-      text("RESET GAME", width/2, this.y+this.buttonHeight/2);
+      text("RESTART GAME", width/2, this.y+this.buttonHeight/2+2);
     }
   }
 }

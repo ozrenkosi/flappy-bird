@@ -1,5 +1,6 @@
 class Score {
   constructor() {
+    this.y = 110;
     this.text = 0;
   }
 
@@ -13,13 +14,13 @@ class Score {
   }
 
   show() {
-    textSize(70);
+    textSize(50);
     fill(236, 251, 222);
     stroke(0);
     strokeWeight(8);
     strokeJoin(BEVEL);
     textStyle(BOLD);
     textAlign(CENTER, CENTER);
-    text(this.text, width/2, height/6);
+    text(this.text, width/2, this.y);
   }
 }
