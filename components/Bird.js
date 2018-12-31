@@ -7,7 +7,6 @@ class Bird {
     this.birdHeight = 45;
 
     this.gravity = 0.7;
-    this.lift = 18;
     this.velocity = 5;
   }
 
@@ -17,6 +16,7 @@ class Bird {
 
     if (this.y >= gameAreaHeight-this.birdHeight) {
       this.y = gameAreaHeight-this.birdHeight;
+      this.velocity = 0;
     }
     if (this.y <= 0) {
       this.y = 0;
@@ -34,7 +34,7 @@ class Bird {
   }
 
   jump() {
-    this.velocity = this.velocity - this.lift;
+    this.velocity = this.velocity - map(this.velocity, -12, 20, 6, 26);
   }
 
   show() {
