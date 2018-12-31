@@ -22,7 +22,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowHeight/2, windowHeight);
+  createCanvas(350, 700);
 
   bird = new Bird();
   resetButton = new ResetButton();
