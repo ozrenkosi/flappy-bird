@@ -17,7 +17,7 @@ class Score {
     fill(236, 251, 222);
     stroke(0);
     strokeWeight(8);
-    strokeJoin(MITER);
+    strokeJoin(BEVEL);
     textStyle(BOLD);
     textAlign(CENTER, CENTER);
     text(this.text, width/2, height/6);
