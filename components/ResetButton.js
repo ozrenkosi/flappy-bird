@@ -21,12 +21,9 @@ class ResetButton {
       stroke(40, 30, 36);
       rect(this.x, this.y, this.buttonWidth, this.buttonHeight, 16);
 
-      textSize(24);
       fill(40, 160, 40);
       noStroke();
-      textStyle(BOLD);
-      textAlign(CENTER, CENTER);
-      text("RESTART GAME", width/2, this.y+this.buttonHeight/2+2);
+      triangle(width/2-12, this.y+this.buttonHeight/2-20, width/2-12, this.y+this.buttonHeight/2+20, width/2+12, this.y+this.buttonHeight/2);
     }
   }
 }
