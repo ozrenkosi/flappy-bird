@@ -1,6 +1,6 @@
 class Score {
   constructor() {
-    this.y = 110;
+    this.y = 90;
     this.text = 0;
   }
 
