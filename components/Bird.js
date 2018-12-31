@@ -17,11 +17,19 @@ class Bird {
 
     if (this.y >= height-this.birdHeight) {
       this.y = height-this.birdHeight;
-      this.velocity = 10;
     }
     if (this.y <= 0) {
       this.y = 0;
       this.velocity = 0;
+    }
+  }
+
+  touchesFloor() {
+    if (this.y >= height-this.birdHeight) {
+      return true;
+    }
+    else {
+      return false;
     }
   }
 

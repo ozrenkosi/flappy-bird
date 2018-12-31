@@ -17,12 +17,12 @@ class ResetButton {
 
   show() {
     if (bird.y >= height-bird.birdHeight) {
-      fill(70, 120, 25);
+      fill(236, 251, 222);
       stroke(40, 30, 36);
       rect(this.x, this.y, this.buttonWidth, this.buttonHeight, 16);
 
       textSize(26);
-      fill(236, 251, 222);
+      fill(40, 160, 40);
       noStroke();
       textStyle(BOLD);
       textAlign(CENTER, CENTER);
