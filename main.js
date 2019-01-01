@@ -9,6 +9,7 @@ let flySound;
 let hitSound;
 let pointSound;
 let swooshSound;
+let customFont;
 let birdIsAlive = true;
 let waitingForStart = true;
 let gameAreaHeight = 547;
@@ -20,6 +21,7 @@ function preload() {
   hitSound = loadSound("assets/sfx_hit.mp3");
   pointSound = loadSound("assets/sfx_point.mp3");
   swooshSound = loadSound("assets/sfx_swooshing.mp3");
+  customFont = loadFont("assets/font.ttf");
 }
 
 function setup() {
