@@ -21,7 +21,7 @@ function preload() {
   hitSound = loadSound("assets/sfx_hit.mp3");
   pointSound = loadSound("assets/sfx_point.mp3");
   swooshSound = loadSound("assets/sfx_swooshing.mp3");
-  customFont = loadFont("assets/font.ttf");
+  customFont = loadFont("assets/font.otf");
 }
 
 function setup() {
